@@ -56,8 +56,8 @@
 		// Filter cities.
 		filter( e );
 
-		// Announce filtering result to screen readers.
-		wp.a11y.speak( WPA11ySpeakText.successMessage1, 'assertive' )
+		// Announce filtering result to screen readers. Default is "polite".
+		wp.a11y.speak( WPA11ySpeakText.successMessage1 )
 	}
 
 	// Filter contacts via form input.
