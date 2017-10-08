@@ -27,7 +27,7 @@ wp_localize_script( 'wp-a11y-speak-filter', 'WPA11ySpeakText', array(
 
 ### assets/scripts/filter-cities.js
 
-In Javascript we do two examples:
+In `assets/scripts/filter-cities.js` file we have two examples:
 
 1. Filter cities from pre-made array.
 1. Filter posts by category using WordPress REST API.
@@ -38,4 +38,8 @@ In both examples main point is one line of code:
 wp.a11y.speak( WPA11ySpeakText.successMessage1, 'assertive' )
 ```
 
-This will handle how result is announced also for screen readers. In this case **Filtering contacts was successful.**.
+This will handle how result is announced also for screen readers. In this case **Filtering contacts was successful**.
+
+### template-parts/content-page.php
+
+In `template-parts/content-page.php` file there are forms that handle the logic in the front-end.
