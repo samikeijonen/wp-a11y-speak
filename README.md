@@ -42,4 +42,4 @@ This will handle how result is announced also for screen readers. In this case *
 
 ### template-parts/content-page.php
 
-In [template-parts/content-page.php](blob/master/template-parts/content-page.php) file there are forms that handle the logic in the front-end.
+In [template-parts/content-page.php](template-parts/content-page.php) file there are forms that handle the logic in the front-end.
