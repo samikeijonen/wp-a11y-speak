@@ -9,7 +9,7 @@ In this demo there are three places where you can see code examples.
 
 ### functions.php
 
-In `functions.php` file we enqueue our JS code and add strings used in `assets/scripts/filter-cities.js` file.
+In [functions.php](functions.php) file we enqueue our JS code and add strings used in `assets/scripts/filter-cities.js` file.
 
 Note that we are adding `wp-a11y` as depency. It does all the magic.
 
@@ -27,7 +27,7 @@ wp_localize_script( 'wp-a11y-speak-filter', 'WPA11ySpeakText', array(
 
 ### assets/scripts/filter-cities.js
 
-In `assets/scripts/filter-cities.js` file we have two examples:
+In [assets/scripts/filter-cities.js](assets/scripts/filter-cities.js) file we have two examples:
 
 1. Filter cities from pre-made array.
 1. Filter posts by category using WordPress REST API.
