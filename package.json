@@ -1,0 +1,30 @@
+{
+  "name": "wp-a11y-speak",
+  "version": "1.0.0",
+  "description": "WP a11y speak",
+  "main": "index.js",
+  "scripts": {
+		"start": "parcel watch assets/scripts/index.js",
+		"build": "parcel build assets/scripts/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samikeijonen/wp-a11y-speak.git"
+  },
+  "keywords": [
+    "a11y"
+  ],
+  "author": "Sami Keijonen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samikeijonen/wp-a11y-speak/issues"
+  },
+  "homepage": "https://github.com/samikeijonen/wp-a11y-speak#readme",
+  "dependencies": {
+    "@wordpress/a11y": "^2.0.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3"
+  }
+}

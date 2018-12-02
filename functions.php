@@ -105,8 +105,16 @@ function wp_a11y_speak_scripts() {
 
 	wp_enqueue_script( 'wp-a11y-speak-skip-link-focus-fix', get_theme_file_uri( 'assets/scripts/skip-link-focus-fix.js' ), array(), '20171015', true );
 
-	// Load filtering JS with wp-a11y JS.
-	wp_enqueue_script( 'wp-a11y-speak-filter', get_theme_file_uri( 'assets/scripts/filter-cities.js' ), array( 'wp-a11y' ), '20171008', true );
+	// Load filtering JS with wp-a11y JS, this uses jQuery.
+	if ( is_page_template( 'page-speak.php' ) ) {
+		wp_enqueue_script( 'wp-a11y-speak-filter', get_theme_file_uri( 'assets/scripts/filter-cities.js' ), array( 'wp-a11y' ), '20181008', true );
+	}
+
+	// Load filtering vanilla JS with wp-a11y JS, this is using @wordpress/a11y.
+	// @link https://github.com/WordPress/gutenberg/tree/master/packages/a11y.
+	if ( is_page_template( 'page-speak-vanilla.php' ) ) {
+		wp_enqueue_script( 'wp-a11y-speak-filter', get_theme_file_uri( 'dist/index.js' ), array(), '20181008', true );
+	}
 
 	// Strings used in JS.
 	wp_localize_script( 'wp-a11y-speak-filter', 'WPA11ySpeakText', array(
